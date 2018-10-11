@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dYU-6X-yte" customClass="SectionHeaderView" customModule="Collapsible_TableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J20-ud-ftx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.30742341926225947" green="0.31704182144625936" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Ttitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9J-ww-F1l">
+                    <rect key="frame" x="16" y="15" width="272" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="p4b-p4-L9T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1t-EH-WiO">
+                    <rect key="frame" x="327" y="6" width="38" height="38"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-W0-8Z9">
+                            <rect key="frame" x="9" y="13" width="20" height="12"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Uwb-Jd-bNT"/>
+                        <constraint firstAttribute="width" constant="38" id="qwm-aB-OBi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="J20-ud-ftx" firstAttribute="top" secondItem="OQl-0G-b4O" secondAttribute="top" id="0cu-08-I4j"/>
+                <constraint firstItem="J20-ud-ftx" firstAttribute="trailing" secondItem="OQl-0G-b4O" secondAttribute="trailing" id="8ve-k7-e4I"/>
+                <constraint firstItem="P9J-ww-F1l" firstAttribute="leading" secondItem="OQl-0G-b4O" secondAttribute="leading" constant="16" id="Noe-r3-4Yd"/>
+                <constraint firstItem="J20-ud-ftx" firstAttribute="leading" secondItem="OQl-0G-b4O" secondAttribute="leading" id="Tvl-6B-X9U"/>
+                <constraint firstItem="OQl-0G-b4O" firstAttribute="bottom" secondItem="c1t-EH-WiO" secondAttribute="bottom" constant="6" id="UOa-Ty-QLO"/>
+                <constraint firstItem="J20-ud-ftx" firstAttribute="bottom" secondItem="OQl-0G-b4O" secondAttribute="bottom" id="XyE-QG-VPo"/>
+                <constraint firstItem="c1t-EH-WiO" firstAttribute="leading" secondItem="P9J-ww-F1l" secondAttribute="trailing" constant="39" id="ac5-Ra-W6L"/>
+                <constraint firstItem="c1t-EH-WiO" firstAttribute="top" secondItem="OQl-0G-b4O" secondAttribute="top" constant="6" id="nLt-b3-4st"/>
+                <constraint firstItem="P9J-ww-F1l" firstAttribute="top" secondItem="OQl-0G-b4O" secondAttribute="top" constant="15" id="tky-FU-ncX"/>
+                <constraint firstItem="OQl-0G-b4O" firstAttribute="trailing" secondItem="c1t-EH-WiO" secondAttribute="trailing" constant="10" id="uxb-W6-xmK"/>
+                <constraint firstItem="OQl-0G-b4O" firstAttribute="bottom" secondItem="P9J-ww-F1l" secondAttribute="bottom" constant="14" id="xNl-xE-IHJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OQl-0G-b4O"/>
+            <connections>
+                <outlet property="arrowImageView" destination="VBq-W0-8Z9" id="fzP-cd-zmB"/>
+                <outlet property="sectionTitleLabel" destination="P9J-ww-F1l" id="0nq-Sz-Xez"/>
+            </connections>
+            <point key="canvasLocation" x="512.79999999999995" y="-499.25037481259375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down_arrow" width="21" height="11"/>
+    </resources>
+</document>
