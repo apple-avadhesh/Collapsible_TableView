@@ -1,4 +1,4 @@
-# Collapsible TableView
+# Collapsible TableView (Swift 4.2 - Xcode 10)
 
 
 
