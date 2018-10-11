@@ -1,4 +1,4 @@
-# Collipsible TableView
+# Collapsible TableView
 
 
 
